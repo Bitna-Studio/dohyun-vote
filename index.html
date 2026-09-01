@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="9월 9일 최도현 응원 투표 전화 연결">
+
+<!-- ★ 휴대폰 화면에 꽉 차게 보이도록 반드시 필요 -->
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="9월 9일 최도현 응원 투표 전화 연결">
 
 <title>최도현 응원 투표</title>
 
+
 <style>
+
 * {
     box-sizing: border-box;
 }
 
+html,
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
     font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
     background: #eef8ff;
     color: #222;
     text-align: center;
 }
 
+
+/* 전체 화면 */
 .container {
-  width: 100%;
-    max-width: none;
+    width: 100%;
     margin: 0;
     padding: 12px;
 }
@@ -35,18 +51,10 @@ body {
     margin: 12px 0 15px;
 }
 
-.name {
-   font-size: 34px;
-    font-weight: 900;
-    color: #075ca8;
-    margin: 18px 0 20px;
-}
 
-
-/* 도현이 사진 */
+/* 사진 */
 .photo {
     width: 100%;
-    max-width: none;
     height: auto;
     display: block;
     margin: 0;
@@ -54,28 +62,18 @@ body {
 }
 
 
-/* 참여 안내 */
-.guide-box {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 20px 16px;
-    margin-top: 22px;
-    font-size: 18px;
-    line-height: 1.7;
-    box-shadow: 0 5px 16px rgba(0,0,0,0.07);
-}
-
-.guide-title {
-    font-size: 25px;
-    font-weight: 800;
-    color: #ff2f7d;
-    margin-bottom: 12px;
+/* 이름 */
+.name {
+    font-size: 34px;
+    font-weight: 900;
+    color: #075ca8;
+    margin: 18px 0 20px;
 }
 
 
-/* 방송 당일 투표번호 */
+/* 투표번호 박스 */
 .number-box {
-     width: 100%;
+    width: 100%;
     background: #fff8cf;
     border: 4px solid #ffc928;
     border-radius: 22px;
@@ -83,73 +81,133 @@ body {
     margin: 20px 0;
 }
 
+
 .number-title {
     font-size: 22px;
     font-weight: 800;
     color: #795600;
 }
 
+
+/* 번호가 확정되면 여기 글자만 변경 */
 .number {
-    font-size: 54px;
+    font-size: 34px;
     font-weight: 900;
-    color: #e32636;
+    color: #4f8a10;
     margin-top: 10px;
 }
 
 
 /* 전화 버튼 */
 .call {
-     display: block;
+    display: block;
     width: 100%;
     margin-top: 20px;
     padding: 24px 8px;
-    background: linear-gradient(135deg, #0878cf, #064f9b);
+
+    background:
+        linear-gradient(135deg, #0878cf, #064f9b);
+
     color: #ffffff;
+
     font-size: 27px;
     font-weight: 900;
+
     border-radius: 28px;
+
     text-decoration: none;
-    box-shadow: 0 7px 16px rgba(0,87,170,0.25);
+
+    box-shadow:
+        0 7px 16px rgba(0,87,170,0.25);
 }
+
 
 .call:active {
     transform: scale(0.98);
 }
 
 
-/* 버튼 아래 안내 */
+/* 전화버튼 아래 안내 */
 .call-guide {
+
+    width: 100%;
+
     background: #ffffff;
+
     border-radius: 15px;
-    padding: 15px 10px;
+
+    padding: 18px 12px;
+
     margin-top: 13px;
-    font-size: 16px;
-    line-height: 1.6;
+
+    font-size: 18px;
+
+    line-height: 1.65;
+
     color: #444;
 }
 
 
-/* 마지막 안내 */
+/* 생방송 안내 */
 .live {
+
+    width: 100%;
+
     margin-top: 20px;
-    padding: 16px 12px;
-    background: #075ca8;
-    color: white;
+
+    padding: 18px 12px;
+
+    background: #fff7d6;
+
+    color: #d98200;
+
+    border: 2px solid #ffd54f;
+
     border-radius: 18px;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 1.5;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    line-height: 1.55;
 }
+
 
 .live strong {
-    color: #ffe044;
+    color: #d98200;
 }
 
+
+/* 마지막 문구 */
 .footer {
-    font-size: 14px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
     color: #777;
-    margin: 17px 0 7px;
+
+    margin: 20px 0 10px;
 }
+
+
+/* 아주 작은 휴대폰 */
+@media (max-width: 380px) {
+
+    .title {
+        font-size: 21px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .call {
+        font-size: 24px;
+    }
+
+}
+
 </style>
 
 </head>
@@ -160,22 +218,31 @@ body {
 <div class="container">
 
 
-    <!-- 상단 -->
+    <!-- 상단 제목 -->
     <div class="title">
         💙 광양이 키운 12세 트롯 꿈나무 💙
     </div>
 
 
     <!-- 도현이 사진 -->
-    <img class="photo" src="dohyun.jpg" alt="최도현">
+    <img
+        class="photo"
+        src="dohyun.jpg"
+        alt="최도현">
 
 
+    <!-- 이름 -->
     <div class="name">
         최도현을 응원해주세요!
     </div>
 
 
-    <!-- ★★★★★ 방송 당일 이 부분의 번호만 수정 ★★★★★ -->
+
+    <!--
+    ★★★★★★★★★★★★★★★★★★★
+      방송 당일 번호만 수정
+    ★★★★★★★★★★★★★★★★★★★
+    -->
 
     <div class="number-box">
 
@@ -184,48 +251,78 @@ body {
         </div>
 
         <div class="number">
-            🍏번
+            🍏 번호 확인 중
         </div>
 
     </div>
 
-    <!-- ★★★★★ 방송 당일 수정 여기까지 ★★★★★ -->
 
+    <!--
+    번호 확정 후 예:
+
+    <div class="number"
+         style="font-size:56px;
+                color:#e32636;">
+        3번
+    </div>
+
+    -->
 
 
     <!-- 전화 바로 연결 -->
-    <a class="call" href="tel:15801">
+    <a
+        class="call"
+        href="tel:15801">
+
         📞 투표 전화 바로 연결하기
+
     </a>
 
 
+
+    <!-- 전화 연결 안내 -->
     <div class="call-guide">
 
-        버튼을 누르면 <strong>15801 전화 화면</strong>으로 연결됩니다.<br>
+        버튼을 누르면
+        <strong>15801 전화 화면</strong>으로 연결됩니다.
+
+        <br><br>
+
         전화가 연결되면<br>
-        위에 표시된 <strong style="color:#e32636;">최도현 투표 번호</strong>를 눌러주세요.
+
+        위에 표시된
+
+        <strong style="color:#e32636;">
+            최도현 투표 번호
+        </strong>
+
+        를 눌러주세요.
 
     </div>
 
 
-  <div style="
-    margin-top:20px;
-    padding:16px 12px;
-    background:#fff7d6;
-    color:#d98200;
-    border-radius:18px;
-    font-size:19px;
-    font-weight:700;
-    line-height:1.5;
-    border:2px solid #ffd54f;
-">
-    📺 9월 9일(수) 아침마당<br>
-    <strong>생방송 중에만 투표 가능합니다!</strong> 💙
-</div>
 
-<div class="footer">
-    여러분의 소중한 한 표가 도현이의 꿈에 큰 힘이 됩니다.
-</div>
+    <!-- 생방송 안내 -->
+    <div class="live">
+
+        📺 투표는
+        <strong>9월 9일(수)</strong><br>
+
+        아침마당
+        <strong>생방송 중에만 가능합니다!</strong>
+        💙
+
+    </div>
+
+
+
+    <!-- 마지막 -->
+    <div class="footer">
+
+        여러분의 소중한 한 표가
+        도현이의 꿈에 큰 힘이 됩니다.
+
+    </div>
 
 
 </div>
