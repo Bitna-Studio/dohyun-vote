@@ -7,123 +7,236 @@
 <title>최도현 응원 투표</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin:0;
-    font-family:"Noto Sans KR", sans-serif;
-    background:#eef8ff;
-    text-align:center;
+    margin: 0;
+    font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+    background: #eef8ff;
+    color: #222;
+    text-align: center;
 }
 
 .container {
-    max-width:480px;
-    margin:auto;
-    padding:20px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 18px;
 }
 
+
+/* 상단 제목 */
 .title {
-    font-size:28px;
-    font-weight:bold;
-    color:#0057b8;
-    margin:20px 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #075ca8;
+    margin: 12px 0 14px;
 }
 
-img {
-    width:100%;
-    border-radius:20px;
+.name {
+    font-size: 30px;
+    font-weight: 800;
+    color: #075ca8;
+    margin: 12px 0 18px;
 }
 
+
+/* 도현이 사진 */
+.photo {
+    width: 72%;
+    max-width: 310px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+}
+
+
+/* 참여 안내 */
+.guide-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 16px;
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 1.7;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.07);
+}
+
+.guide-title {
+    font-size: 21px;
+    font-weight: 800;
+    color: #ff2f7d;
+    margin-bottom: 12px;
+}
+
+
+/* 방송 당일 투표번호 */
 .number-box {
-    background:#fff4c2;
-    border:4px solid #ffcc00;
-    border-radius:20px;
-    padding:20px;
-    margin:20px 0;
+    background: #fff8cf;
+    border: 3px solid #ffc928;
+    border-radius: 20px;
+    padding: 17px 12px;
+    margin: 20px 0;
 }
 
 .number-title {
-    font-size:20px;
-    font-weight:bold;
-    color:#d35400;
+    font-size: 18px;
+    font-weight: 700;
+    color: #795600;
 }
 
 .number {
-    font-size:50px;
-    font-weight:bold;
-    color:#e60012;
-    margin-top:10px;
+    font-size: 46px;
+    font-weight: 900;
+    color: #e32636;
+    margin-top: 5px;
 }
 
-.notice {
-    background:white;
-    border-radius:20px;
-    padding:20px;
-    font-size:18px;
-    line-height:1.6;
-}
 
+/* 전화 버튼 */
 .call {
-    display:block;
-    margin-top:25px;
-    padding:20px;
-    background:#0066cc;
-    color:white;
-    font-size:26px;
-    font-weight:bold;
-    border-radius:30px;
-    text-decoration:none;
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #0878cf, #064f9b);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 28px;
+    text-decoration: none;
+    box-shadow: 0 7px 16px rgba(0,87,170,0.25);
 }
 
-.small {
-    font-size:15px;
-    color:#555;
-    margin-top:15px;
+.call:active {
+    transform: scale(0.98);
+}
+
+
+/* 버튼 아래 안내 */
+.call-guide {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* 마지막 안내 */
+.live {
+    margin-top: 20px;
+    padding: 16px 12px;
+    background: #075ca8;
+    color: white;
+    border-radius: 18px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.live strong {
+    color: #ffe044;
+}
+
+.footer {
+    font-size: 14px;
+    color: #777;
+    margin: 17px 0 7px;
 }
 </style>
 
 </head>
 
+
 <body>
 
 <div class="container">
 
-<div class="title">
-💙 광양이 키운 12세 트롯 꿈나무 💙
-</div>
 
-<img src="dohyun.jpg">
-
-<!-- 방송 직전 수정하는 부분 -->
-<div class="number-box">
-
-<div class="number-title">
-⭐ 최도현 투표 번호 ⭐
-</div>
-
-<div class="number">
-👉 ○번
-</div>
-
-</div>
+    <!-- 상단 -->
+    <div class="title">
+        💙 광양이 키운 12세 트롯 꿈나무 💙
+    </div>
 
 
-<div class="notice">
-
-📞 전화 연결 후<br>
-<strong>
-위 투표 번호를 눌러주세요!
-</strong>
-
-</div>
+    <!-- 도현이 사진 -->
+    <img class="photo" src="dohyun.jpg" alt="최도현">
 
 
-<a class="call" href="tel:15801">
-📞 전화로 바로 응원하기
-</a>
+    <div class="name">
+        최도현을 응원해주세요!
+    </div>
 
 
-<div class="small">
-15801 연결 후 안내에 따라 참여해주세요 💙
-</div>
+    <!-- 참여방법 -->
+    <div class="guide-box">
+
+        <div class="guide-title">
+            ⭐ 이렇게 참여해주세요!
+        </div>
+
+        📺 <strong>9월 9일(화)</strong><br>
+        KBS1TV 아침마당 생방송 중<br>
+        전화 투표가 진행됩니다.
+
+    </div>
+
+
+
+    <!-- ★★★★★ 방송 당일 이 부분의 번호만 수정 ★★★★★ -->
+
+    <div class="number-box">
+
+        <div class="number-title">
+            ⭐ 최도현 투표 번호 ⭐
+        </div>
+
+        <div class="number">
+            ○번
+        </div>
+
+    </div>
+
+    <!-- ★★★★★ 방송 당일 수정 여기까지 ★★★★★ -->
+
+
+
+    <!-- 전화 바로 연결 -->
+    <a class="call" href="tel:15801">
+        📞 투표 전화 바로 연결하기
+    </a>
+
+
+    <div class="call-guide">
+
+        버튼을 누르면 <strong>15801 전화 화면</strong>으로 연결됩니다.<br><br>
+
+        📞 전화가 연결되면<br>
+        위에 표시된 <strong style="color:#e32636;">최도현 투표 번호</strong>를 눌러주세요.
+
+    </div>
+
+
+
+    <!-- 생방송 강조 -->
+    <div class="live">
+
+        📺 <strong>9월 9일 아침마당 생방송 중</strong><br>
+        최도현 응원 투표 부탁드립니다! 💙
+
+    </div>
+
+
+    <div class="footer">
+        여러분의 소중한 한 표가 도현이의 꿈에 큰 힘이 됩니다.
+    </div>
 
 
 </div>
